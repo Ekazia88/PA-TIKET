@@ -42,10 +42,10 @@ Partial Class Login
         '
         Me.txtkodeuser.BackColor = System.Drawing.Color.White
         Me.txtkodeuser.Font = New System.Drawing.Font("Rockwell", 10.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtkodeuser.Location = New System.Drawing.Point(1016, 169)
-        Me.txtkodeuser.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtkodeuser.Location = New System.Drawing.Point(508, 88)
+        Me.txtkodeuser.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtkodeuser.Name = "txtkodeuser"
-        Me.txtkodeuser.Size = New System.Drawing.Size(269, 42)
+        Me.txtkodeuser.Size = New System.Drawing.Size(136, 25)
         Me.txtkodeuser.TabIndex = 42
         '
         'Label4
@@ -53,11 +53,11 @@ Partial Class Login
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Rockwell", 10.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(731, 172)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(366, 89)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Padding = New System.Windows.Forms.Padding(10, 3, 10, 3)
-        Me.Label4.Size = New System.Drawing.Size(182, 42)
+        Me.Label4.Padding = New System.Windows.Forms.Padding(5, 2, 5, 2)
+        Me.Label4.Size = New System.Drawing.Size(95, 22)
         Me.Label4.TabIndex = 40
         Me.Label4.Text = "Kode User"
         '
@@ -65,10 +65,10 @@ Partial Class Login
         '
         Me.btnregis.BackColor = System.Drawing.Color.AliceBlue
         Me.btnregis.Font = New System.Drawing.Font("Footlight MT Light", 12.0!)
-        Me.btnregis.Location = New System.Drawing.Point(293, 361)
-        Me.btnregis.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnregis.Location = New System.Drawing.Point(146, 188)
+        Me.btnregis.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnregis.Name = "btnregis"
-        Me.btnregis.Size = New System.Drawing.Size(173, 65)
+        Me.btnregis.Size = New System.Drawing.Size(86, 34)
         Me.btnregis.TabIndex = 39
         Me.btnregis.Text = "Register"
         Me.btnregis.UseVisualStyleBackColor = False
@@ -77,10 +77,10 @@ Partial Class Login
         '
         Me.bntexit.BackColor = System.Drawing.Color.AliceBlue
         Me.bntexit.Font = New System.Drawing.Font("Footlight MT Light", 12.0!)
-        Me.bntexit.Location = New System.Drawing.Point(840, 361)
-        Me.bntexit.Margin = New System.Windows.Forms.Padding(4)
+        Me.bntexit.Location = New System.Drawing.Point(420, 188)
+        Me.bntexit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.bntexit.Name = "bntexit"
-        Me.bntexit.Size = New System.Drawing.Size(173, 65)
+        Me.bntexit.Size = New System.Drawing.Size(86, 34)
         Me.bntexit.TabIndex = 38
         Me.bntexit.Text = "Exit"
         Me.bntexit.UseVisualStyleBackColor = False
@@ -89,10 +89,10 @@ Partial Class Login
         '
         Me.btnlogin.BackColor = System.Drawing.Color.AliceBlue
         Me.btnlogin.Font = New System.Drawing.Font("Footlight MT Light", 12.0!)
-        Me.btnlogin.Location = New System.Drawing.Point(569, 361)
-        Me.btnlogin.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnlogin.Location = New System.Drawing.Point(284, 188)
+        Me.btnlogin.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnlogin.Name = "btnlogin"
-        Me.btnlogin.Size = New System.Drawing.Size(173, 65)
+        Me.btnlogin.Size = New System.Drawing.Size(86, 34)
         Me.btnlogin.TabIndex = 37
         Me.btnlogin.Text = "Login"
         Me.btnlogin.UseVisualStyleBackColor = False
@@ -101,20 +101,20 @@ Partial Class Login
         '
         Me.txtpass.BackColor = System.Drawing.Color.White
         Me.txtpass.Font = New System.Drawing.Font("Rockwell", 10.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtpass.Location = New System.Drawing.Point(312, 250)
-        Me.txtpass.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtpass.Location = New System.Drawing.Point(156, 130)
+        Me.txtpass.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtpass.Name = "txtpass"
-        Me.txtpass.Size = New System.Drawing.Size(269, 42)
+        Me.txtpass.Size = New System.Drawing.Size(136, 25)
         Me.txtpass.TabIndex = 36
         '
         'txtuser
         '
         Me.txtuser.BackColor = System.Drawing.Color.White
         Me.txtuser.Font = New System.Drawing.Font("Rockwell", 10.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtuser.Location = New System.Drawing.Point(312, 176)
-        Me.txtuser.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtuser.Location = New System.Drawing.Point(156, 92)
+        Me.txtuser.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtuser.Name = "txtuser"
-        Me.txtuser.Size = New System.Drawing.Size(269, 42)
+        Me.txtuser.Size = New System.Drawing.Size(136, 25)
         Me.txtuser.TabIndex = 35
         '
         'Label2
@@ -122,11 +122,11 @@ Partial Class Login
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Rockwell", 10.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(47, 250)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(24, 130)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Padding = New System.Windows.Forms.Padding(10, 3, 10, 3)
-        Me.Label2.Size = New System.Drawing.Size(173, 42)
+        Me.Label2.Padding = New System.Windows.Forms.Padding(5, 2, 5, 2)
+        Me.Label2.Size = New System.Drawing.Size(90, 22)
         Me.Label2.TabIndex = 34
         Me.Label2.Text = "Password"
         '
@@ -135,11 +135,11 @@ Partial Class Login
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Rockwell", 10.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(47, 176)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(24, 92)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Padding = New System.Windows.Forms.Padding(10, 3, 10, 3)
-        Me.Label1.Size = New System.Drawing.Size(181, 42)
+        Me.Label1.Padding = New System.Windows.Forms.Padding(5, 2, 5, 2)
+        Me.Label1.Size = New System.Drawing.Size(94, 22)
         Me.Label1.TabIndex = 33
         Me.Label1.Text = "Username"
         '
@@ -148,9 +148,10 @@ Partial Class Login
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Goudy Stout", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(485, 41)
+        Me.Label3.Location = New System.Drawing.Point(242, 21)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(306, 66)
+        Me.Label3.Size = New System.Drawing.Size(153, 32)
         Me.Label3.TabIndex = 43
         Me.Label3.Text = "Login"
         '
@@ -159,10 +160,10 @@ Partial Class Login
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Rockwell", 10.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(974, 172)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Location = New System.Drawing.Point(487, 89)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(25, 36)
+        Me.Label5.Size = New System.Drawing.Size(13, 18)
         Me.Label5.TabIndex = 44
         Me.Label5.Text = ":"
         '
@@ -171,10 +172,10 @@ Partial Class Login
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Rockwell", 10.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(262, 250)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Location = New System.Drawing.Point(131, 130)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(25, 36)
+        Me.Label6.Size = New System.Drawing.Size(13, 18)
         Me.Label6.TabIndex = 45
         Me.Label6.Text = ":"
         '
@@ -183,21 +184,21 @@ Partial Class Login
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Rockwell", 10.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(262, 176)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Location = New System.Drawing.Point(131, 92)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(25, 36)
+        Me.Label7.Size = New System.Drawing.Size(13, 18)
         Me.Label7.TabIndex = 46
         Me.Label7.Text = ":"
         '
         'Login
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.HighlightText
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1343, 484)
+        Me.ClientSize = New System.Drawing.Size(672, 252)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -211,6 +212,7 @@ Partial Class Login
         Me.Controls.Add(Me.txtuser)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Login"
         Me.Text = "Form Login"
         Me.ResumeLayout(False)
