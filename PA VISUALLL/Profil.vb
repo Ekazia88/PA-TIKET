@@ -20,4 +20,9 @@ Public Class Profil
     Private Sub Profil_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
         Application.Exit()
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Hide()
+        MenuUser.Show()
+    End Sub
 End Class

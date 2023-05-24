@@ -45,7 +45,7 @@ Partial Class LihatPesanan
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BtnBack = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -312,17 +312,17 @@ Partial Class LihatPesanan
         Me.Label24.TabIndex = 24
         Me.Label24.Text = ":"
         '
-        'Button1
+        'BtnBack
         '
-        Me.Button1.BackColor = System.Drawing.Color.BurlyWood
-        Me.Button1.Font = New System.Drawing.Font("Footlight MT Light", 14.0!)
-        Me.Button1.Location = New System.Drawing.Point(576, 301)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(106, 46)
-        Me.Button1.TabIndex = 26
-        Me.Button1.Text = "Kembali"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.BtnBack.BackColor = System.Drawing.Color.BurlyWood
+        Me.BtnBack.Font = New System.Drawing.Font("Footlight MT Light", 14.0!)
+        Me.BtnBack.Location = New System.Drawing.Point(576, 301)
+        Me.BtnBack.Margin = New System.Windows.Forms.Padding(2)
+        Me.BtnBack.Name = "BtnBack"
+        Me.BtnBack.Size = New System.Drawing.Size(106, 46)
+        Me.BtnBack.TabIndex = 26
+        Me.BtnBack.Text = "Kembali"
+        Me.BtnBack.UseVisualStyleBackColor = False
         '
         'LihatPesanan
         '
@@ -331,7 +331,7 @@ Partial Class LihatPesanan
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(765, 370)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.BtnBack)
         Me.Controls.Add(Me.Label24)
         Me.Controls.Add(Me.Label23)
         Me.Controls.Add(Me.Label22)
@@ -385,5 +385,5 @@ Partial Class LihatPesanan
     Friend WithEvents Label22 As Label
     Friend WithEvents Label23 As Label
     Friend WithEvents Label24 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents BtnBack As Button
 End Class

@@ -22,4 +22,9 @@ Public Class LihatPesanan
         Me.Hide()
         MenuUser.Show()
     End Sub
+
+    Private Sub BtnBack_Click(sender As Object, e As EventArgs) Handles BtnBack.Click
+        Me.Hide()
+        MenuUser.Show()
+    End Sub
 End Class

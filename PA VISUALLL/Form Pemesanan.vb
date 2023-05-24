@@ -4,6 +4,7 @@ Public Class Form_Pemesanan
     Dim jml_orang As Integer
     Dim hasil As Integer
     Dim idm As Integer
+    Dim Tgl As DateTime
     Sub Daerah()
         Cbke.Items.Add("Berau")
         Cbke.Items.Add("Samarinda")
@@ -36,9 +37,10 @@ Public Class Form_Pemesanan
         DR = CMD.ExecuteReader()
         DR.Read()
         Jml_kursi = DR("Jumlah_Kursi")
-        Dim Status = DR("status_mobil")
+        Dim Status As String = DR("status_mobil")
+
         Call Konn()
-        Dim Sql3 As String = "Select Dari,Tujuan,sum(jumlah_kursi) As jml from pesanan where id_mobil ='" & CbMobil.SelectedValue & "'"
+        Dim Sql3 As String = "Select Dari,Tujuan,Tanggal_pergi,sum(jumlah_kursi) As jml from pesanan where id_mobil ='" & CbMobil.SelectedValue & "'"
         CMD = New MySqlCommand(Sql3, CONN)
         DR = CMD.ExecuteReader()
         DR.Read()
@@ -56,11 +58,20 @@ Public Class Form_Pemesanan
             cmdsql.ExecuteNonQuery()
             MsgBox("Anda Berhasil Pesan", MsgBoxStyle.Information, "Warning")
         Else
+            Tgl = DR("Tanggal_pergi")
+            Dim datex As DateTime = Tgl.Date
             jml_orang = DR("jml")
+            Dim Dari As String = DR("Dari").ToString()
+            Dim Ke As String = DR("Tujuan").ToString()
+            Dim SelectedDari As String = CbDari.SelectedItem.ToString()
+            Dim SelectedKe As String = Cbke.SelectedItem.ToString()
             If jml_orang >= Jml_kursi And Status = "Kosong" Then
                 MsgBox("Mobil Sudah Penuh!", MsgBoxStyle.Information, "Warning")
-            ElseIf DR("Dari") IsNot CbDari.SelectedItem And DR("Tujuan") IsNot Cbke.SelectedItem Then
+            ElseIf Dari <> SelectedKe And Ke <> SelectedKe Then
+
                 MsgBox("Mobil Berbeda Arah Tujuan, Silahkan Pilih Mobil Yang Lain", MsgBoxStyle.Information, "Warning")
+            ElseIf DateTimePicker1.Value.Date <> datex Then
+                MsgBox("Mobil Ini berangkat pada tanggal" & Tgl & "", MsgBoxStyle.Information, "Warning")
             Else
                 Call Konn()
                 Dim cmdsql As New MySqlCommand("insert into pesanan(id_pesan,id_customer,Dari,Tujuan,Harga_total,Jumlah_kursi,Tanggal_Pergi,id_mobil) values ('',@idcus,@dari,@tujuan,@hargatotal,@jumlah_kursi,@TanggalPergi,@id_mobil)", CONN)
@@ -83,9 +94,10 @@ Public Class Form_Pemesanan
 
     Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePicker1.ValueChanged
         Dim currentDateTime As DateTime = DateTime.Now
-        If currentDateTime < DateTimePicker1.Value Then
+        If currentDateTime > DateTimePicker1.Value Then
             MsgBox("Anda Bisa Memesan Tiket Mulai hari ini", MsgBoxStyle.Information, "Warning")
         End If
+
     End Sub
 
     Private Sub CbDari_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CbDari.SelectedIndexChanged

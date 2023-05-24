@@ -172,7 +172,7 @@ Partial Class Profil
         Me.Button2.BackColor = System.Drawing.Color.Azure
         Me.Button2.Font = New System.Drawing.Font("Footlight MT Light", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(232, 298)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(149, 43)
         Me.Button2.TabIndex = 54
@@ -199,7 +199,7 @@ Partial Class Profil
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label2)
         Me.DoubleBuffered = True
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Profil"
         Me.Text = "Profi"
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()

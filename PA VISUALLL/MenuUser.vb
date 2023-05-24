@@ -58,4 +58,9 @@ Public Class MenuUser
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
+
+    Private Sub BtnProfil_Click(sender As Object, e As EventArgs) Handles BtnProfil.Click
+        Me.Hide()
+        Profil.Show()
+    End Sub
 End Class
