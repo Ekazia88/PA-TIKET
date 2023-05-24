@@ -287,7 +287,7 @@ Partial Class FormPemesanan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.PA_VISUALLL.My.Resources.Resources.Travel__1_
+        Me.BackgroundImage = Global.PA_VISUALLL.My.Resources.Resources.Travel
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1372, 926)
         Me.Controls.Add(Me.DataGridView1)

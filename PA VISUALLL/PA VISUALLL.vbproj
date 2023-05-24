@@ -15,6 +15,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -27,7 +28,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -65,10 +65,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mysql.data">
-      <HintPath>..\..\..\..\Downloads\mysql-connector-net-6.6.4-noinstall\mysql-connector-net-6.6.4-noinstall\v4\mysql.data.dll</HintPath>
+      <HintPath>C:\Users\User\Downloads\mysql-connector-net-6.6.4-noinstall\mysql-connector-net-6.6.4-noinstall\v4\mysql.data.dll</HintPath>
     </Reference>
     <Reference Include="mysql.data.entity">
-      <HintPath>..\..\..\..\Downloads\mysql-connector-net-6.6.4-noinstall\mysql-connector-net-6.6.4-noinstall\v4\mysql.data.entity.dll</HintPath>
+      <HintPath>C:\Users\User\Downloads\mysql-connector-net-6.6.4-noinstall\mysql-connector-net-6.6.4-noinstall\v4\mysql.data.entity.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -95,6 +95,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CetakLaporan.Designer.vb">
+      <DependentUpon>CetakLaporan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CetakLaporan.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form Pemesanan.Designer.vb">
       <DependentUpon>Form Pemesanan.vb</DependentUpon>
     </Compile>
@@ -106,16 +112,28 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LihatDataAkun.Designer.vb">
+      <DependentUpon>LihatDataAkun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LihatDataAkun.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LihatDataPesanan.Designer.vb">
+      <DependentUpon>LihatDataPesanan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LihatDataPesanan.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MenuUser.Designer.vb">
       <DependentUpon>MenuUser.vb</DependentUpon>
     </Compile>
     <Compile Include="MenuUser.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.vb">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <Compile Include="RegistrasiBARU.Designer.vb">
+      <DependentUpon>RegistrasiBARU.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form3.vb">
+    <Compile Include="RegistrasiBARU.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormMenuAdmin.Designer.vb">
@@ -134,10 +152,10 @@
     <Compile Include="LihatPesanan.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.vb">
-      <DependentUpon>Login.vb</DependentUpon>
+    <Compile Include="LoginBARU.Designer.vb">
+      <DependentUpon>LoginBARU.vb</DependentUpon>
     </Compile>
-    <Compile Include="Login.vb">
+    <Compile Include="LoginBARU.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module1.vb" />
@@ -157,22 +175,37 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="TambahData.Designer.vb">
-      <DependentUpon>TambahData.vb</DependentUpon>
+    <Compile Include="ManajemenDataMobil.Designer.vb">
+      <DependentUpon>ManajemenDataMobil.vb</DependentUpon>
     </Compile>
-    <Compile Include="TambahData.vb">
+    <Compile Include="ManajemenDataMobil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profil.Designer.vb">
+      <DependentUpon>Profil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Profil.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CetakLaporan.resx">
+      <DependentUpon>CetakLaporan.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form Pemesanan.resx">
       <DependentUpon>Form Pemesanan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <EmbeddedResource Include="LihatDataAkun.resx">
+      <DependentUpon>LihatDataAkun.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrasiBARU.resx">
+      <DependentUpon>RegistrasiBARU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LihatDataPesanan.resx">
+      <DependentUpon>LihatDataPesanan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuUser.resx">
       <DependentUpon>MenuUser.vb</DependentUpon>
@@ -186,8 +219,8 @@
     <EmbeddedResource Include="LihatPesanan.resx">
       <DependentUpon>LihatPesanan.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.vb</DependentUpon>
+    <EmbeddedResource Include="LoginBARU.resx">
+      <DependentUpon>LoginBARU.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -195,8 +228,11 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="TambahData.resx">
-      <DependentUpon>TambahData.vb</DependentUpon>
+    <EmbeddedResource Include="ManajemenDataMobil.resx">
+      <DependentUpon>ManajemenDataMobil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profil.resx">
+      <DependentUpon>Profil.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -231,6 +267,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Travel %281%291.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

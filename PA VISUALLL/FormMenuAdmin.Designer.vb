@@ -24,17 +24,12 @@ Partial Class FormMenuAdmin
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.MenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TambahDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EditDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ManajemenDataMobilToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LihatDataPesananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AkunToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.KeluarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
-        Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.ToolStripStatusLabel2 = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.ToolStripStatusLabel3 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
-        Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -52,22 +47,22 @@ Partial Class FormMenuAdmin
         '
         'MenuToolStripMenuItem
         '
-        Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TambahDataToolStripMenuItem, Me.EditDataToolStripMenuItem})
+        Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ManajemenDataMobilToolStripMenuItem, Me.LihatDataPesananToolStripMenuItem})
         Me.MenuToolStripMenuItem.Name = "MenuToolStripMenuItem"
-        Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(98, 22)
-        Me.MenuToolStripMenuItem.Text = "Manajemen "
+        Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(56, 22)
+        Me.MenuToolStripMenuItem.Text = "Menu"
         '
-        'TambahDataToolStripMenuItem
+        'ManajemenDataMobilToolStripMenuItem
         '
-        Me.TambahDataToolStripMenuItem.Name = "TambahDataToolStripMenuItem"
-        Me.TambahDataToolStripMenuItem.Size = New System.Drawing.Size(223, 22)
-        Me.TambahDataToolStripMenuItem.Text = "Manajemen Data Mobil"
+        Me.ManajemenDataMobilToolStripMenuItem.Name = "ManajemenDataMobilToolStripMenuItem"
+        Me.ManajemenDataMobilToolStripMenuItem.Size = New System.Drawing.Size(223, 22)
+        Me.ManajemenDataMobilToolStripMenuItem.Text = "Manajemen Data Mobil"
         '
-        'EditDataToolStripMenuItem
+        'LihatDataPesananToolStripMenuItem
         '
-        Me.EditDataToolStripMenuItem.Name = "EditDataToolStripMenuItem"
-        Me.EditDataToolStripMenuItem.Size = New System.Drawing.Size(238, 22)
-        Me.EditDataToolStripMenuItem.Text = "Manajemen Data Pesanan"
+        Me.LihatDataPesananToolStripMenuItem.Name = "LihatDataPesananToolStripMenuItem"
+        Me.LihatDataPesananToolStripMenuItem.Size = New System.Drawing.Size(223, 22)
+        Me.LihatDataPesananToolStripMenuItem.Text = "Lihat Data Pesanan"
         '
         'AkunToolStripMenuItem
         '
@@ -80,37 +75,6 @@ Partial Class FormMenuAdmin
         Me.KeluarToolStripMenuItem.Name = "KeluarToolStripMenuItem"
         Me.KeluarToolStripMenuItem.Size = New System.Drawing.Size(62, 22)
         Me.KeluarToolStripMenuItem.Text = "Keluar"
-        '
-        'StatusStrip1
-        '
-        Me.StatusStrip1.BackColor = System.Drawing.Color.LightSteelBlue
-        Me.StatusStrip1.Font = New System.Drawing.Font("Rockwell", 10.125!)
-        Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(32, 32)
-        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1, Me.ToolStripStatusLabel2, Me.ToolStripStatusLabel3})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 330)
-        Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(0, 0, 7, 0)
-        Me.StatusStrip1.Size = New System.Drawing.Size(629, 22)
-        Me.StatusStrip1.TabIndex = 1
-        Me.StatusStrip1.Text = "StatusStrip1"
-        '
-        'ToolStripStatusLabel1
-        '
-        Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
-        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(145, 17)
-        Me.ToolStripStatusLabel1.Text = "ToolStripStatusLabel1"
-        '
-        'ToolStripStatusLabel2
-        '
-        Me.ToolStripStatusLabel2.Name = "ToolStripStatusLabel2"
-        Me.ToolStripStatusLabel2.Size = New System.Drawing.Size(145, 17)
-        Me.ToolStripStatusLabel2.Text = "ToolStripStatusLabel2"
-        '
-        'ToolStripStatusLabel3
-        '
-        Me.ToolStripStatusLabel3.Name = "ToolStripStatusLabel3"
-        Me.ToolStripStatusLabel3.Size = New System.Drawing.Size(145, 17)
-        Me.ToolStripStatusLabel3.Text = "ToolStripStatusLabel3"
         '
         'Label1
         '
@@ -132,7 +96,6 @@ Partial Class FormMenuAdmin
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(629, 352)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.DoubleBuffered = True
         Me.MainMenuStrip = Me.MenuStrip1
@@ -141,8 +104,6 @@ Partial Class FormMenuAdmin
         Me.Text = "Form Menu Admin"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        Me.StatusStrip1.ResumeLayout(False)
-        Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -150,13 +111,9 @@ Partial Class FormMenuAdmin
 
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents MenuToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AkunToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents StatusStrip1 As StatusStrip
-    Friend WithEvents EditDataToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents LihatDataPesananToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents KeluarToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
-    Friend WithEvents ToolStripStatusLabel2 As ToolStripStatusLabel
-    Friend WithEvents ToolStripStatusLabel3 As ToolStripStatusLabel
     Friend WithEvents Label1 As Label
-    Friend WithEvents TambahDataToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ManajemenDataMobilToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AkunToolStripMenuItem As ToolStripMenuItem
 End Class

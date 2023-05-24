@@ -5,6 +5,7 @@ Module Module1
     Public DR As MySqlDataReader
     Public DA As MySqlDataAdapter
     Public DS As DataSet
+    Public DT As DataTable
     Public STR As String
 
     Sub Konn()

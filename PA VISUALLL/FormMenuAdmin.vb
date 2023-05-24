@@ -2,15 +2,29 @@
     Private Sub FormMenuAdmin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
-    Private Sub TambahDataToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TambahDataToolStripMenuItem.Click
-        FormPemesanan.Show()
+
+
+    Private Sub KeluarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KeluarToolStripMenuItem.Click
+        Me.Hide()
+        LoginBARU.Show()
     End Sub
 
-    Private Sub EditDataToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EditDataToolStripMenuItem.Click
-
+    Private Sub LihatDataPesananToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LihatDataPesananToolStripMenuItem.Click
+        Me.Hide()
+        LihatDataPesanan.Show()
     End Sub
 
-    Private Sub MenuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MenuToolStripMenuItem.Click
+    Private Sub ManajemenDataMobilToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ManajemenDataMobilToolStripMenuItem.Click
+        Me.Hide()
+        ManajemenDataMobil.Show()
+    End Sub
 
+    Private Sub AkunToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AkunToolStripMenuItem.Click
+        Me.Hide()
+        LihatDataAkun.Show()
+    End Sub
+
+    Private Sub FormMenuAdmin_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        Application.Exit()
     End Sub
 End Class
